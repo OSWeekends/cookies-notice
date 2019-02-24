@@ -1,7 +1,7 @@
 // ToDo: Refactor all this mess into something testable ^^
 
 /** [anonymous function]
- *  AutoExecuted. It encapsulates all the code to avoid console modifications or name collissions
+ *  Auto-Executed. Encapsulates all the code to avoid console modifications or name collisions
  */
 (function () {
   // Configuration
@@ -37,8 +37,7 @@
   function render(elem) {
     // Cookies notice text
     var text = document.createElement("span");
-    var advise = COOKIES_ADVISE_TEXT;
-    text.innerHTML = advise;
+    text.innerHTML = COOKIES_ADVISE_TEXT;
 
     // Accept cookies button
     var button = document.createElement("div");
@@ -69,6 +68,7 @@
     notice.appendChild(button);
 
     elem.appendChild(notice);
+
     decorations();
     listeners(elem);
   }
